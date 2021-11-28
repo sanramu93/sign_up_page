@@ -1,36 +1,67 @@
-/* Landscape phones and down */
+/* Large desktop */
+@media (max-width: 1500px) {
+  main {
+    width: 60%;
+    height: 85%;
+  }
+}
 
-@media (max-width: 480px) {
+/* Large desktop */
+@media (max-width: 1200px) {
+  main {
+    width: 80%;
+    height: 90%;
+  }
+
+  .main-form {
+    margin: 0 6.4rem;
+    margin-bottom: auto;
+  }
+
+  .img-astrounaut {
+    padding: 2.4rem;
+  }
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 810px) {
-  main {
-    width: 50rem;
-    height: 70rem;
+@media (max-width: 850px) {
+  body {
+    font-size: 1.4rem;
   }
 
-  h1 {
-    margin-bottom: 1.6rem;
+  main {
+    width: 70%;
+    height: 80%;
   }
 
   .main-left {
     display: none;
   }
+
   .main-right {
     width: 100%;
+  }
+
+  .btn-up--big {
+    width: 80%;
+  }
+
+  .already-member {
+    margin-bottom: 2.4rem;
   }
 
   .btn-in,
   .btn-up {
     font-size: 1rem;
   }
-
-  .btn-up--big {
-    margin-bottom: 1.6rem;
-  }
 }
 
-/* Large desktop */
-@media (min-width: 1200px) {
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  main {
+    width: 95%;
+    height: 80%;
+    margin: 2.4rem;
+  }
 }
