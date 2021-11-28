@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronaut Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./queries.css">
+    <script src="./script.js" defers></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="main-left container">
+        <img class="img-astrounaut" src="./images/astronaut.png" alt="astronaut">
+      </div>
+      <div class="main-right container">
+        <div class="sign-buttons container">
+          <button class="btn btn-in btn--hidden">Sign In</button>
+          <button class="btn btn-up btn--active">Sign Up</button>
+        </div>
+        <div class="main-form">
+        <div class="sign-links">
+          <h1>
+            <a href="/" class="text--hidden">Sign In</a> <span> or </span><a href="/" class="text--active">Sign Up</a>
+          </h1>
+        </div>
+        <form action="/">
+          <div class="input input--name">
+            <label for="name">FULL NAME</label>
+
+            <input type="text" name="name" id="name" placeholder="Enter your Full name" required />
+          </div>
+          <div class="input input--password">
+            <label for="password">PASSWORD</label>
+
+            <input type="password" name="password" id="password" placeholder="Enter password" required />
+          </div>
+          <div class="input input--email">
+            <label for="email">EMAIL</label>
+
+            <input type="email" name="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="terms">
+            <input
+              type="checkbox"
+              name="terms-of-service"
+              id="terms-of-service"
+              required
+            />
+            <p>I agree all statements in <a href="/">terms of service</a></p>
+            </div>
+            <div class="already-member">
+              <button class="btn btn-up--big">Sign Up</button>
+              <a href="/">I'm already a member</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
