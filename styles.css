@@ -101,7 +101,6 @@ body {
 
 main {
   width: 50%;
-  height: 80%;
   display: flex;
   margin: 4.8rem;
   background-image: url("./images/main-background.jpg");
@@ -166,6 +165,7 @@ input[type="checkbox"] {
   width: 50%;
   background-color: hsla(218, 23%, 21%, 0.7);
   flex-direction: column;
+  padding: 2.4rem 1.8rem;
 }
 
 /* FORM */
@@ -176,14 +176,13 @@ input[type="checkbox"] {
 }
 
 .sign-buttons {
-  margin: 1.6rem 2.4rem;
   justify-content: end;
   margin-bottom: auto;
 }
 
 .input,
 .terms {
-  margin-bottom: 3.2rem;
+  padding-bottom: 2.4rem;
 }
 
 .input {
