@@ -206,13 +206,16 @@ h1 {
   padding: 1.6rem 0;
 }
 
-.text--hidden {
+.text-in,
+.text-up {
   opacity: 0.4;
+  transition: all 0.4s ease-out;
 }
 
 .text--active {
   font-weight: 600;
-  border-bottom: #ee6c4d 2px solid;
+  /* border-bottom: #ee6c4d 2px solid; */
+  opacity: 1;
 }
 
 h1 span {
@@ -224,21 +227,20 @@ h1 span {
 
 .btn-in {
   border-radius: 20px 0 0 20px;
+  opacity: 0.2;
+  transition: all 0.3s ease-out;
 }
 
 .btn-up {
   border-radius: 0 20px 20px 0;
-}
-
-.btn--hidden {
-  background-color: #e0fbfc;
-  color: #293242;
   opacity: 0.2;
+  transition: all 0.3s ease-out;
 }
 
 .btn--active {
   background-color: #98c1d9;
   color: #293241;
+  opacity: 1;
 }
 
 .btn-up--big {
@@ -268,4 +270,38 @@ h1 span {
 
 .already-member a {
   font-size: 1.2rem;
+}
+
+/* ---------------------- */
+
+/* .ul-animation {
+  display: inline-block;
+  position: relative;
+  color: #ee6c4d;
+} */
+
+.ul-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ee6c4d;
+
+  transition: transform 0.25s ease-out;
+  animation-name: ul-animation;
+  animation-duration: 1s;
+}
+
+@keyframes ul-animation {
+  from {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
